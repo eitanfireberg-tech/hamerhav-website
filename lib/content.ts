@@ -4,16 +4,16 @@
 export const SITE = {
   name: 'המרחב הבטוח לצמיחה',
   therapistName: 'קרן בן כליפה פיירברג',
-  phone: '054-6306915',
-  phoneHref: 'tel:+972546306915',
-  whatsapp: 'https://wa.me/972546306915',
+  phone: '054-6306916',
+  phoneHref: 'tel:+972546306916',
+  whatsapp: 'https://wa.me/972546306916',
   email: 'joyfulight@gmail.com',
 } as const;
 
 export const SEO = {
   title: 'קרן בן כליפה פיירברג | פסיכותרפיסטית | המרחב הבטוח לצמיחה',
   description:
-    'פסיכותרפיסטית קלינית עם מעל 20 שנות ניסיון. טיפול רגשי אינטגרטיבי לפרטים, זוגות ומשפחות. CBT, פסיכודרמה, Focusing, SE. קרן בן כליפה פיירברג — 054-6306915.',
+    'פסיכותרפיסטית קלינית עם מעל 20 שנות ניסיון. טיפול רגשי אינטגרטיבי לפרטים, זוגות ומשפחות. CBT, פסיכודרמה, Focusing, SE. קרן בן כליפה פיירברג — 054-6306916.',
   url: 'https://hamerhav.co.il',
   locale: 'he_IL',
 } as const;
@@ -295,9 +295,9 @@ export const CONTACT = {
   title: 'צרו קשר',
   subtitle: 'שיחת היכרות ראשונית ללא עלות',
   description: 'אשמח לענות על שאלות ולתאם פגישת היכרות. ניתן ליצור קשר בטלפון, בוואטסאפ או בטופס כאן.',
-  phone: '054-6306915',
-  phoneHref: 'tel:+972546306915',
-  whatsapp: 'https://wa.me/972546306915',
+  phone: '054-6306916',
+  phoneHref: 'tel:+972546306916',
+  whatsapp: 'https://wa.me/972546306916',
   whatsappLabel: 'שלחו הודעה בוואטסאפ',
   form: {
     name: 'שם מלא',
