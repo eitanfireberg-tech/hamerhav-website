@@ -48,8 +48,8 @@ export const ABOUT = {
     'גישתי הטיפולית אינטגרטיבית ומתאימה את עצמה לעולמו הייחודי של כל מטופל. אני מאמינה שכל אדם נושא בתוכו משאבים פנימיים עמוקים, ותפקידי לסייע בגישה אליהם.',
   ],
   credentials: [
-    { label: 'M.A', description: 'תואר שני בפסיכולוגיה קלינית' },
-    { label: 'EAP', description: 'מוסמך סיוע לעובדים' },
+    { label: 'M.A', description: 'תואר שני בפסיכודרמה' },
+    { label: 'EAP', description: 'Group Therapist' },
     { label: '20+ שנה', description: 'ניסיון קליני' },
   ],
   photoAlt: 'קרן בן כליפה פיירברג',
