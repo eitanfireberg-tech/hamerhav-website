@@ -7,9 +7,7 @@ export const SITE = {
   phone: '054-6306915',
   phoneHref: 'tel:+972546306915',
   whatsapp: 'https://wa.me/972546306915',
-  email: 'keren@hamerhav.co.il',
-  facebook: 'https://www.facebook.com',
-  instagram: 'https://www.instagram.com',
+  email: 'joyfulight@gmail.com',
 } as const;
 
 export const SEO = {
