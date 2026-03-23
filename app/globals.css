@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-sage: #7A9E6A;
+  --color-sage-light: #E8EDDF;
+  --color-sage-soft: #B5C4A0;
+  --color-gold: #8B7340;
+  --color-cream: #F5F2EB;
+  --color-sand: #F0EDE6;
+  --color-dark: #2C2C2A;
+
+  /* Typography */
+  --font-serif: var(--font-noto-serif-he), "Georgia", serif;
+  --font-body: var(--font-noto-sans-he), "Arial", sans-serif;
+  --font-playfair: var(--font-playfair), "Georgia", serif;
+}
+
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5F2EB;
+  color: #2C2C2A;
+  font-family: var(--font-noto-sans-he), "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-noto-serif-he), "Georgia", serif;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.section-padding {
+  padding-block: 80px;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-block: 40px;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #7A9E6A;
+  outline-offset: 2px;
+}
