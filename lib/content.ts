@@ -49,7 +49,7 @@ export const ABOUT = {
   ],
   credentials: [
     { label: 'M.A', description: 'תואר שני בפסיכודרמה' },
-    { label: 'EAP', description: 'Group Therapist' },
+    { label: 'Group Therapist', description: '' },
     { label: '20+ שנה', description: 'ניסיון קליני' },
   ],
   photoAlt: 'קרן בן כליפה פיירברג',

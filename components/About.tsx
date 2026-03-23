@@ -52,7 +52,7 @@ export default function About() {
                   aria-label={`${cred.label}: ${cred.description}`}
                 >
                   <p className="font-serif font-bold text-[#7A9E6A] text-xl">{cred.label}</p>
-                  <p className="text-xs text-[#2C2C2A]/70 mt-0.5">{cred.description}</p>
+                  {cred.description && <p className="text-xs text-[#2C2C2A]/70 mt-0.5">{cred.description}</p>}
                 </div>
               ))}
             </div>
