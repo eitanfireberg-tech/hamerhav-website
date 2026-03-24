@@ -75,11 +75,11 @@ export default function OnlineTrack() {
                   transition={{ duration: 0.4, delay: 0.2 + i * 0.1 }}
                   className="bg-[#F5F2EB] rounded-xl p-4 text-right border-r-4 border-[#7A9E6A]"
                 >
-                  <div className="flex items-center justify-end gap-2 mb-2">
+                  <div className="flex items-center justify-start gap-2 mb-2">
+                    <span className="text-[#7A9E6A]">{iconMap[track.icon]}</span>
                     <h3 className="font-serif font-semibold text-[#2C2C2A] text-base">
                       {track.title}
                     </h3>
-                    <span className="text-[#7A9E6A]">{iconMap[track.icon]}</span>
                   </div>
                   <p className="text-[#2C2C2A]/65 text-sm leading-relaxed">{track.description}</p>
                 </motion.div>
