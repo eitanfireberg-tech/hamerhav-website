@@ -92,7 +92,7 @@ export default function Hero() {
                 className="inline-block border border-[#7A9E6A] text-[#7A9E6A] hover:bg-[#7A9E6A] hover:text-white font-medium text-base px-8 py-3.5 rounded-full transition-colors duration-200 text-center"
                 aria-label="קראו עוד על קרן"
               >
-                קראו עוד
+                קראו עוד עלי
               </a>
             </motion.div>
           </div>
