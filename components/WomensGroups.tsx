@@ -89,9 +89,9 @@ export default function WomensGroups() {
 
             <ul className="space-y-4 list-none p-0 m-0 mb-8" role="list">
               {WOMENS_GROUPS.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 justify-end">
+                <li key={i} className="flex items-start gap-3">
                   <CheckCircle className="text-[#7A9E6A] mt-0.5 shrink-0" size={18} aria-hidden="true" />
-                  <span className="text-[#2C2C2A]/80 text-base text-right">{item}</span>
+                  <span className="text-[#2C2C2A]/80 text-base text-right flex-1">{item}</span>
                 </li>
               ))}
             </ul>
