@@ -25,9 +25,13 @@ export default function Philosophy() {
           >
             <p
               id="philosophy-title"
-              className="font-serif text-2xl md:text-3xl font-bold text-[#7A9E6A] mb-6"
+              className="font-serif text-2xl md:text-3xl font-bold text-[#7A9E6A] mb-4"
             >
               {PHILOSOPHY.quote}
+            </p>
+
+            <p className="font-serif text-lg md:text-xl text-[#7A9E6A]/80 font-medium mb-6">
+              {PHILOSOPHY.subtitle}
             </p>
 
             <blockquote
