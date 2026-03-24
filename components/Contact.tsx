@@ -127,7 +127,7 @@ export default function Contact() {
             <p className="text-white/70 text-sm mb-8">{CONTACT.description}</p>
 
             {/* Direct contact links */}
-            <div className="flex flex-wrap gap-3 justify-end mb-10">
+            <div className="flex flex-wrap gap-3 justify-start mb-10">
               <a
                 href={CONTACT.phoneHref}
                 className="flex items-center gap-2 bg-white text-[#7A9E6A] hover:bg-[#F5F2EB] font-medium px-5 py-2.5 rounded-full transition-colors"
