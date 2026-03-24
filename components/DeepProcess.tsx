@@ -80,17 +80,17 @@ export default function DeepProcess() {
                   aria-controls={`dp-panel-${i}`}
                   className="w-full flex items-center justify-between gap-4 px-5 py-4 text-right hover:bg-[#F5F2EB] transition-colors"
                 >
-                  <ChevronDown
-                    size={18}
-                    aria-hidden="true"
-                    className={`text-[#7A9E6A] transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
-                  />
                   <div className="flex items-center gap-3 flex-1 justify-end">
+                    <span className="text-[#7A9E6A] shrink-0">{iconMap[item.icon]}</span>
                     <span className="font-serif font-semibold text-[#2C2C2A] text-base">
                       {item.title}
                     </span>
-                    <span className="text-[#7A9E6A] shrink-0">{iconMap[item.icon]}</span>
                   </div>
+                  <ChevronDown
+                    size={18}
+                    aria-hidden="true"
+                    className={`text-[#7A9E6A] transition-transform duration-200 shrink-0 ${isOpen ? "rotate-180" : ""}`}
+                  />
                 </button>
                 {isOpen && (
                   <div
