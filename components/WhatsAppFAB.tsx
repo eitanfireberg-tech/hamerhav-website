@@ -8,7 +8,7 @@ export default function WhatsAppFAB() {
       href={SITE.whatsapp}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 left-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#1ebe5e] rounded-full shadow-lg transition-colors md:hidden"
+      className="fixed bottom-6 left-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#1ebe5e] rounded-full shadow-lg transition-colors"
       aria-label="שלחו הודעה בוואטסאפ"
     >
       <svg
