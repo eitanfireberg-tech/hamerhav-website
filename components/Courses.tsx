@@ -51,7 +51,7 @@ export default function Courses() {
               className="bg-white rounded-2xl p-6 text-right hover:shadow-lg transition-shadow"
               aria-label={course.title}
             >
-              <div className="flex justify-end mb-4">
+              <div className="flex justify-start mb-4">
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-[#E8EDDF] rounded-xl text-[#7A9E6A]">
                   {iconMap[course.icon]}
                 </div>
