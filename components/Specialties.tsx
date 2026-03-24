@@ -47,9 +47,9 @@ export default function Specialties() {
               transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
               className="bg-white rounded-xl px-5 py-4 flex flex-col items-end border border-[#E8EDDF] hover:border-[#7A9E6A] transition-colors"
             >
-              <span className="text-[#2C2C2A] font-medium text-base">{item.he}</span>
+              <span className="text-[#2C2C2A] font-medium text-base w-full text-right">{item.he}</span>
               <span
-                className="text-[#8B7340] text-sm mt-0.5"
+                className="text-[#8B7340] text-sm mt-0.5 w-full text-right"
                 style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
               >
                 {item.en}
