@@ -1,0 +1,19 @@
+{
+  "name": "המרחב הבטוח לצמיחה — קרן בן כליפה פיירברג",
+  "short_name": "המרחב הבטוח",
+  "description": "פסיכותרפיסטית קלינית עם מעל 20 שנות ניסיון. טיפול רגשי אינטגרטיבי.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F2EB",
+  "theme_color": "#7A9E6A",
+  "lang": "he",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/og-image.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
