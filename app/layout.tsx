@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Serif_Hebrew, Noto_Sans_Hebrew, Playfair_Display } from "next/font/google";
+import { Noto_Serif_Hebrew, Noto_Sans_Hebrew, Playfair_Display, Karantina } from "next/font/google";
 import "./globals.css";
 import { SEO, SITE } from "@/lib/content";
 
@@ -14,6 +14,13 @@ const notoSansHe = Noto_Sans_Hebrew({
   variable: "--font-noto-sans-he",
   subsets: ["hebrew"],
   weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+const karantina = Karantina({
+  variable: "--font-karantina",
+  subsets: ["hebrew"],
+  weight: ["400", "700"],
   display: "swap",
 });
 
@@ -70,7 +77,7 @@ export default function RootLayout({
     <html
       lang="he"
       dir="rtl"
-      className={`${notoSerifHe.variable} ${notoSansHe.variable} ${playfair.variable}`}
+      className={`${notoSerifHe.variable} ${notoSansHe.variable} ${playfair.variable} ${karantina.variable}`}
     >
       <head>
         <script

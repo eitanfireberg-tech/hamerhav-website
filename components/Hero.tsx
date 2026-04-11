@@ -68,7 +68,7 @@ export default function Hero() {
               variants={fadeUp}
               initial="hidden"
               animate="visible"
-              className="text-lg md:text-xl text-[#2C2C2A]/80 leading-relaxed mb-8 max-w-lg"
+              className="text-2xl md:text-3xl text-[#2C2C2A]/80 leading-relaxed mb-8 max-w-lg font-[family-name:var(--font-karantina)]"
             >
               {HERO.tagline}
             </motion.p>
