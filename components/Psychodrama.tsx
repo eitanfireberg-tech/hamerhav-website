@@ -59,15 +59,23 @@ export default function Psychodrama() {
               {PSYCHODRAMA.titleLatin}
             </p>
 
-            <p className="text-[#2C2C2A]/80 text-base leading-loose mb-8">
-              {PSYCHODRAMA.definition}
+            {PSYCHODRAMA.paragraphs.map((paragraph, i) => (
+              <p key={i} className="text-[#2C2C2A]/80 text-base leading-loose mb-4">
+                {paragraph}
+              </p>
+            ))}
+
+            <p className="text-[#2C2C2A]/80 text-base font-semibold mt-4 mb-3">
+              {PSYCHODRAMA.benefitsIntro}
             </p>
 
             <ul className="space-y-3 list-none p-0 m-0" role="list">
               {PSYCHODRAMA.benefits.map((benefit, i) => (
-                <li key={i} className="flex items-center gap-3 justify-start">
-                  <CheckCircle className="text-[#7A9E6A] shrink-0" size={18} aria-hidden="true" />
-                  <span className="text-[#2C2C2A]/80 text-base">{benefit}</span>
+                <li key={i} className="flex items-start gap-3 justify-start">
+                  <CheckCircle className="text-[#7A9E6A] shrink-0 mt-1" size={18} aria-hidden="true" />
+                  <span className="text-[#2C2C2A]/80 text-base">
+                    <strong>{benefit.title}:</strong> {benefit.description}
+                  </span>
                 </li>
               ))}
             </ul>

@@ -29,7 +29,6 @@ export default function Specialties() {
           >
             {SPECIALTIES.title}
           </h2>
-          <p className="text-[#2C2C2A]/60 text-base">{SPECIALTIES.subtitle}</p>
         </motion.div>
 
         <motion.ul
