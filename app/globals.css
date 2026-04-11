@@ -54,3 +54,12 @@ h1, h2, h3, h4, h5, h6 {
   outline: 2px solid #7A9E6A;
   outline-offset: 2px;
 }
+
+/* Hide scrollbar but keep scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

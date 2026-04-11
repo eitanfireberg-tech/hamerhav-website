@@ -11,6 +11,7 @@ import OnlineTrack from "@/components/OnlineTrack";
 import Courses from "@/components/Courses";
 import WomensGroups from "@/components/WomensGroups";
 import Philosophy from "@/components/Philosophy";
+import Recommendations from "@/components/Recommendations";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFAB from "@/components/WhatsAppFAB";
@@ -32,6 +33,7 @@ export default function Home() {
         <Courses />
         <WomensGroups />
         <Philosophy />
+        <Recommendations />
         <Contact />
       </main>
       <Footer />
