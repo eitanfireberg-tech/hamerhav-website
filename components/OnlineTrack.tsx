@@ -6,7 +6,6 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Briefcase, Heart, User, Activity } from "lucide-react";
 import { ONLINE_TRACK } from "@/lib/content";
-import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 const iconMap: Record<string, React.ReactNode> = {
   briefcase: <Briefcase size={22} aria-hidden="true" />,
@@ -27,7 +26,6 @@ export default function OnlineTrack() {
       ref={ref}
     >
       <div className="section-container">
-        <QuoteOpen />
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
           {/* Photo — left */}
           <motion.div
@@ -90,7 +88,6 @@ export default function OnlineTrack() {
           </motion.div>
         </div>
 
-        <QuoteClose />
       </div>
     </section>
   );

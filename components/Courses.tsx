@@ -5,7 +5,6 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Activity, Building2, Eye, Users, Home } from "lucide-react";
 import { COURSES } from "@/lib/content";
-import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 const iconMap: Record<string, React.ReactNode> = {
   activity: <Activity size={26} aria-hidden="true" />,
@@ -27,7 +26,6 @@ export default function Courses() {
       ref={ref}
     >
       <div className="section-container">
-        <QuoteOpen variant="light" />
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -64,7 +62,6 @@ export default function Courses() {
           ))}
         </div>
 
-        <QuoteClose variant="light" />
       </div>
     </section>
   );

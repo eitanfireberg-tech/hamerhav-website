@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { PHILOSOPHY } from "@/lib/content";
-import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 export default function Philosophy() {
   const ref = useRef(null);
@@ -18,7 +17,6 @@ export default function Philosophy() {
       ref={ref}
     >
       <div className="section-container">
-        <QuoteOpen />
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -64,7 +62,6 @@ export default function Philosophy() {
             </a>
           </motion.div>
 
-          <QuoteClose />
         </div>
       </div>
     </section>

@@ -7,7 +7,6 @@ import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Phone, MessageCircle, Mail } from "lucide-react";
 import { CONTACT, SITE } from "@/lib/content";
-import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 type FormData = {
   name: string;
@@ -68,7 +67,6 @@ export default function Contact() {
       ref={ref}
     >
       <div className="section-container">
-        <QuoteOpen variant="light" />
         <div className="flex flex-col md:flex-row items-start gap-12 md:gap-16">
           {/* Photo — left */}
           <motion.div
@@ -256,7 +254,6 @@ export default function Contact() {
           </motion.div>
         </div>
 
-        <QuoteClose variant="light" />
       </div>
     </section>
   );

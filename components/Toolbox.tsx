@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { TOOLBOX } from "@/lib/content";
-import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 export default function Toolbox() {
   const ref = useRef(null);
@@ -18,7 +17,6 @@ export default function Toolbox() {
       ref={ref}
     >
       <div className="section-container">
-        <QuoteOpen />
         <div className="max-w-3xl mx-auto text-center">
           <motion.h2
             id="toolbox-title"
@@ -50,7 +48,6 @@ export default function Toolbox() {
             </p>
           </motion.blockquote>
 
-          <QuoteClose />
         </div>
       </div>
     </section>

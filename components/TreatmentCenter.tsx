@@ -5,7 +5,6 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { CheckCircle } from "lucide-react";
 import { TREATMENT_CENTER } from "@/lib/content";
-import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 export default function TreatmentCenter() {
   const ref = useRef(null);
@@ -30,7 +29,6 @@ export default function TreatmentCenter() {
       />
 
       <div className="section-container relative">
-        <QuoteOpen variant="light" />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -70,7 +68,6 @@ export default function TreatmentCenter() {
           </p>
         </motion.div>
 
-        <QuoteClose variant="light" />
       </div>
 
       {/* Wave separator */}

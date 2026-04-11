@@ -6,7 +6,6 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { CheckCircle } from "lucide-react";
 import { PSYCHODRAMA } from "@/lib/content";
-import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 export default function Psychodrama() {
   const ref = useRef(null);
@@ -20,7 +19,6 @@ export default function Psychodrama() {
       ref={ref}
     >
       <div className="section-container">
-        <QuoteOpen />
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
           {/* Photo — left */}
           <motion.div
@@ -84,7 +82,6 @@ export default function Psychodrama() {
           </motion.div>
         </div>
 
-        <QuoteClose />
       </div>
     </section>
   );
