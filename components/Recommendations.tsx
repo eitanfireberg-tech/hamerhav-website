@@ -147,7 +147,7 @@ export default function Recommendations() {
 
               {/* Closing quote mark — mirrored, bottom-left corner */}
               <span
-                className="absolute bottom-4 left-4 text-5xl text-[#7A9E6A]/25 leading-none font-serif select-none scale-x-[-1]"
+                className="absolute bottom-12 left-4 text-5xl text-[#7A9E6A]/25 leading-none font-serif select-none scale-x-[-1]"
                 aria-hidden="true"
               >
                 ״
