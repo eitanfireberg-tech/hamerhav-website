@@ -63,13 +63,6 @@ export default function TreatmentCenter() {
             ))}
           </ul>
 
-          <div className="text-center text-white mb-4">
-            <p className="text-lg font-semibold mb-2">{TREATMENT_CENTER.offerIntro}</p>
-            <p className="text-base leading-relaxed text-white/90 max-w-xl mx-auto">
-              {TREATMENT_CENTER.offerings}
-            </p>
-          </div>
-
           <p className="text-center text-white/85 text-base leading-relaxed max-w-xl mx-auto mt-6">
             {TREATMENT_CENTER.closingText}
           </p>
