@@ -130,7 +130,7 @@ export default function Recommendations() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + i * 0.05 }}
-              className="snap-center shrink-0 w-[82vw] sm:w-[70vw] md:w-[380px] bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
+              className="snap-center shrink-0 w-[82vw] sm:w-[70vw] md:w-[380px] bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col relative"
             >
               {/* Opening quote mark */}
               <span
@@ -145,9 +145,9 @@ export default function Recommendations() {
                 {item.quote}
               </p>
 
-              {/* Closing quote mark — mirrored for Hebrew */}
+              {/* Closing quote mark — mirrored, bottom-left corner */}
               <span
-                className="text-5xl text-[#7A9E6A]/25 leading-none font-serif select-none block text-left scale-x-[-1]"
+                className="absolute bottom-4 left-4 text-5xl text-[#7A9E6A]/25 leading-none font-serif select-none scale-x-[-1]"
                 aria-hidden="true"
               >
                 ״
