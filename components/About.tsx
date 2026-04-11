@@ -49,10 +49,9 @@ export default function About() {
                   key={cred.label}
                   className="bg-[#E8EDDF] rounded-xl px-5 py-3 text-center min-w-[110px] min-h-[72px] flex flex-col justify-center items-center"
                   role="img"
-                  aria-label={`${cred.label.replace('\n', ' ')}: ${cred.description}`}
+                  aria-label={cred.label.replace(/\n/g, ' ')}
                 >
-                  <p className="font-serif font-bold text-[#7A9E6A] text-xl whitespace-pre-line leading-tight">{cred.label}</p>
-                  {cred.description && <p className="text-xs text-[#2C2C2A]/70 mt-0.5">{cred.description}</p>}
+                  <p className="font-serif font-bold text-[#7A9E6A] text-base whitespace-pre-line leading-tight">{cred.label}</p>
                 </div>
               ))}
             </div>
