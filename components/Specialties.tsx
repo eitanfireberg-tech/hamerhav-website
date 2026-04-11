@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { SPECIALTIES } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 export default function Specialties() {
   const ref = useRef(null);
@@ -56,6 +57,8 @@ export default function Specialties() {
             </motion.li>
           ))}
         </motion.ul>
+
+        <SectionQuotes />
       </div>
     </section>
   );

@@ -6,6 +6,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Briefcase, Heart, User, Activity } from "lucide-react";
 import { ONLINE_TRACK } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 const iconMap: Record<string, React.ReactNode> = {
   briefcase: <Briefcase size={22} aria-hidden="true" />,
@@ -87,6 +88,8 @@ export default function OnlineTrack() {
             </div>
           </motion.div>
         </div>
+
+        <SectionQuotes />
       </div>
     </section>
   );

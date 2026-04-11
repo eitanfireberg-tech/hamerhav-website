@@ -6,6 +6,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { CheckCircle } from "lucide-react";
 import { PSYCHODRAMA } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 export default function Psychodrama() {
   const ref = useRef(null);
@@ -81,6 +82,8 @@ export default function Psychodrama() {
             </ul>
           </motion.div>
         </div>
+
+        <SectionQuotes />
       </div>
     </section>
   );

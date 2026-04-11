@@ -7,6 +7,7 @@ import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Phone, MessageCircle, Mail } from "lucide-react";
 import { CONTACT, SITE } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 type FormData = {
   name: string;
@@ -253,6 +254,8 @@ export default function Contact() {
             </form>
           </motion.div>
         </div>
+
+        <SectionQuotes variant="light" />
       </div>
     </section>
   );

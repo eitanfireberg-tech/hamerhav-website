@@ -5,6 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { CheckCircle } from "lucide-react";
 import { WOMENS_GROUPS } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 // Simple SVG illustration of a circle of women
 function WomenCircleSVG() {
@@ -105,6 +106,8 @@ export default function WomensGroups() {
             </a>
           </motion.div>
         </div>
+
+        <SectionQuotes />
       </div>
     </section>
   );

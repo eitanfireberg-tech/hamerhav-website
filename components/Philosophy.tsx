@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { PHILOSOPHY } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 export default function Philosophy() {
   const ref = useRef(null);
@@ -42,7 +43,7 @@ export default function Philosophy() {
                 className="absolute top-0 right-0 text-7xl text-[#7A9E6A]/20 leading-none font-serif"
                 aria-hidden="true"
               >
-                &rdquo;
+                &#x201E;
               </span>
               {PHILOSOPHY.body.split('\n').map((paragraph, i) => (
                 <span key={i} className={i > 0 ? 'block mt-4' : ''}>
@@ -67,6 +68,8 @@ export default function Philosophy() {
               {PHILOSOPHY.ctaButton}
             </a>
           </motion.div>
+
+          <SectionQuotes />
         </div>
       </div>
     </section>

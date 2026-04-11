@@ -5,6 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { CheckCircle } from "lucide-react";
 import { TREATMENT_CENTER } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 export default function TreatmentCenter() {
   const ref = useRef(null);
@@ -67,6 +68,8 @@ export default function TreatmentCenter() {
             {TREATMENT_CENTER.closingText}
           </p>
         </motion.div>
+
+        <SectionQuotes variant="light" />
       </div>
 
       {/* Wave separator */}

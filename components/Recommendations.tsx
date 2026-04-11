@@ -3,6 +3,7 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import { motion, useInView } from "framer-motion";
 import { RECOMMENDATIONS } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 export default function Recommendations() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -137,7 +138,7 @@ export default function Recommendations() {
                 className="text-5xl text-[#7A9E6A]/25 leading-none font-serif select-none mb-2"
                 aria-hidden="true"
               >
-                &ldquo;
+                &#x201E;
               </span>
 
               {/* Quote text */}
@@ -177,6 +178,10 @@ export default function Recommendations() {
           ))}
         </div>
       </motion.div>
+
+      <div className="section-container">
+        <SectionQuotes />
+      </div>
     </section>
   );
 }

@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Search, Heart, Layers, Star, RefreshCw, Check } from "lucide-react";
 import { DEEP_PROCESS } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 const iconMap: Record<string, React.ReactNode> = {
   search: <Search size={20} aria-hidden="true" />,
@@ -82,6 +83,8 @@ export default function DeepProcess() {
             </motion.div>
           ))}
         </div>
+
+        <SectionQuotes />
       </div>
     </section>
   );

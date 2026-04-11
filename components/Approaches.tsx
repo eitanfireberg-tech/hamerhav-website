@@ -5,6 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Brain, Crosshair, PersonStanding, Palette } from "lucide-react";
 import { APPROACHES } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 const iconMap: Record<string, React.ReactNode> = {
   brain: <Brain size={28} aria-hidden="true" />,
@@ -69,6 +70,8 @@ export default function Approaches() {
             </motion.article>
           ))}
         </div>
+
+        <SectionQuotes />
       </div>
     </section>
   );

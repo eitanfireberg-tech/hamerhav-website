@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { TOOLBOX } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 export default function Toolbox() {
   const ref = useRef(null);
@@ -44,9 +45,11 @@ export default function Toolbox() {
             className="border-r-4 border-[#7A9E6A] pr-6 text-right"
           >
             <p className="text-[#7A9E6A] text-base font-medium italic leading-loose">
-              &ldquo;{TOOLBOX.highlight}&rdquo;
+              &#x201E;{TOOLBOX.highlight}&#x201C;
             </p>
           </motion.blockquote>
+
+          <SectionQuotes />
         </div>
       </div>
     </section>

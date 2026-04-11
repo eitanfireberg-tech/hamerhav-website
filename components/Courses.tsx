@@ -5,6 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Activity, Building2, Eye, Users, Home } from "lucide-react";
 import { COURSES } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 const iconMap: Record<string, React.ReactNode> = {
   activity: <Activity size={26} aria-hidden="true" />,
@@ -61,6 +62,8 @@ export default function Courses() {
             </motion.article>
           ))}
         </div>
+
+        <SectionQuotes variant="light" />
       </div>
     </section>
   );

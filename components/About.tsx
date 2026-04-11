@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ABOUT } from "@/lib/content";
+import SectionQuotes from "./SectionQuotes";
 
 export default function About() {
   const ref = useRef(null);
@@ -76,6 +77,8 @@ export default function About() {
             </div>
           </motion.div>
         </div>
+
+        <SectionQuotes />
       </div>
     </section>
   );
