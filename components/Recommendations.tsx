@@ -145,9 +145,9 @@ export default function Recommendations() {
                 {item.quote}
               </p>
 
-              {/* Closing quote mark */}
+              {/* Closing quote mark — mirrored for Hebrew */}
               <span
-                className="text-5xl text-[#7A9E6A]/25 leading-none font-serif select-none block text-left"
+                className="text-5xl text-[#7A9E6A]/25 leading-none font-serif select-none block text-left scale-x-[-1]"
                 aria-hidden="true"
               >
                 ״
