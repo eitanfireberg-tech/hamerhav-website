@@ -41,27 +41,39 @@ export default function TreatmentCenter() {
           >
             {TREATMENT_CENTER.title}
           </h2>
-          <p className="text-white/85 text-lg max-w-xl mx-auto">{TREATMENT_CENTER.subtitle}</p>
+          <p className="text-white/85 text-xl max-w-xl mx-auto">{TREATMENT_CENTER.subtitle}</p>
         </motion.div>
 
-        <motion.ul
-          className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto list-none p-0 m-0"
-          role="list"
+        <motion.div
+          className="max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {TREATMENT_CENTER.items.map((item, i) => (
-            <li key={i} className="flex items-start gap-3 text-right">
-              <CheckCircle
-                className="text-white/70 mt-1 shrink-0"
-                size={18}
-                aria-hidden="true"
-              />
-              <span className="text-white text-base leading-relaxed">{item}</span>
-            </li>
-          ))}
-        </motion.ul>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none p-0 m-0 mb-8" role="list">
+            {TREATMENT_CENTER.items.map((item, i) => (
+              <li key={i} className="flex items-start gap-3 text-right">
+                <CheckCircle
+                  className="text-white/70 mt-1 shrink-0"
+                  size={18}
+                  aria-hidden="true"
+                />
+                <span className="text-white text-base leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="text-center text-white mb-4">
+            <p className="text-lg font-semibold mb-2">{TREATMENT_CENTER.offerIntro}</p>
+            <p className="text-base leading-relaxed text-white/90 max-w-xl mx-auto">
+              {TREATMENT_CENTER.offerings}
+            </p>
+          </div>
+
+          <p className="text-center text-white/85 text-base leading-relaxed max-w-xl mx-auto mt-6">
+            {TREATMENT_CENTER.closingText}
+          </p>
+        </motion.div>
       </div>
 
       {/* Wave separator */}
