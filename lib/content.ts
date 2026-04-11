@@ -14,7 +14,7 @@ export const SEO = {
   title: 'קרן בן כליפה פיירברג | פסיכותרפיסטית | המרחב הבטוח לצמיחה',
   description:
     'פסיכותרפיסטית קלינית עם מעל 20 שנות ניסיון. טיפול רגשי אינטגרטיבי לפרטים, זוגות ומשפחות. CBT, פסיכודרמה, Focusing, SE. קרן בן כליפה פיירברג — 054-6306916.',
-  url: 'https://hamerhav.co.il',
+  url: 'https://kerenfireberg.co.il',
   locale: 'he_IL',
 } as const;
 
