@@ -1,38 +1,22 @@
 "use client";
 
-import { useState, useRef } from "react";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import {
-  Search,
-  Map,
-  Heart,
-  Layers,
-  Star,
-  RefreshCw,
-  Check,
-  Compass,
-  ChevronDown,
-} from "lucide-react";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { Search, Heart, Layers, Star, RefreshCw, Check } from "lucide-react";
 import { DEEP_PROCESS } from "@/lib/content";
 
 const iconMap: Record<string, React.ReactNode> = {
   search: <Search size={20} aria-hidden="true" />,
-  map: <Map size={20} aria-hidden="true" />,
   heart: <Heart size={20} aria-hidden="true" />,
   layers: <Layers size={20} aria-hidden="true" />,
   star: <Star size={20} aria-hidden="true" />,
   refresh: <RefreshCw size={20} aria-hidden="true" />,
   check: <Check size={20} aria-hidden="true" />,
-  compass: <Compass size={20} aria-hidden="true" />,
 };
 
 export default function DeepProcess() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
-
-  const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
   return (
     <section
@@ -63,48 +47,40 @@ export default function DeepProcess() {
           </p>
         </motion.div>
 
+        <div className="w-12 h-px bg-[#7A9E6A]/40 mx-auto mb-10" />
+
+        <motion.div
+          className="text-center mb-8 max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 16 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <h3 className="font-serif text-2xl font-bold text-[#7A9E6A] mb-2">
+            {DEEP_PROCESS.sectionTitle}
+          </h3>
+          <p className="text-[#2C2C2A]/75 text-base">
+            {DEEP_PROCESS.sectionIntro}
+          </p>
+        </motion.div>
+
         <div className="max-w-2xl mx-auto space-y-3">
-          {DEEP_PROCESS.items.map((item, i) => {
-            const isOpen = openIndex === i;
-            return (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 16 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.4, delay: 0.05 * i }}
-                className="bg-white rounded-xl overflow-hidden"
-              >
-                <button
-                  onClick={() => toggle(i)}
-                  aria-expanded={isOpen}
-                  aria-controls={`dp-panel-${i}`}
-                  className="w-full flex items-center justify-between gap-4 px-5 py-4 text-right hover:bg-[#F5F2EB] transition-colors"
-                >
-                  <ChevronDown
-                    size={18}
-                    aria-hidden="true"
-                    className={`text-[#7A9E6A] transition-transform duration-200 shrink-0 ${isOpen ? "rotate-180" : ""}`}
-                  />
-                  <div className="flex items-center gap-3 flex-1 justify-start">
-                    <span className="text-[#7A9E6A] shrink-0">{iconMap[item.icon]}</span>
-                    <span className="font-serif font-semibold text-[#2C2C2A] text-base">
-                      {item.title}
-                    </span>
-                  </div>
-                </button>
-                {isOpen && (
-                  <div
-                    id={`dp-panel-${i}`}
-                    role="region"
-                    aria-label={item.title}
-                    className="px-5 pb-5 text-right"
-                  >
-                    <p className="text-[#2C2C2A]/75 text-sm leading-loose">{item.body}</p>
-                  </div>
-                )}
-              </motion.div>
-            );
-          })}
+          {DEEP_PROCESS.items.map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 16 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.4, delay: 0.25 + 0.05 * i }}
+              className="bg-white rounded-xl px-5 py-4 flex items-start gap-3"
+            >
+              <span className="text-[#7A9E6A] shrink-0 mt-1">{iconMap[item.icon]}</span>
+              <div>
+                <p className="font-serif font-semibold text-[#2C2C2A] text-base mb-1">
+                  {item.title}
+                </p>
+                <p className="text-[#2C2C2A]/75 text-base leading-loose">{item.body}</p>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

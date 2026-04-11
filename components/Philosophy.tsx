@@ -44,7 +44,11 @@ export default function Philosophy() {
               >
                 &rdquo;
               </span>
-              {PHILOSOPHY.body}
+              {PHILOSOPHY.body.split('\n').map((paragraph, i) => (
+                <span key={i} className={i > 0 ? 'block mt-4' : ''}>
+                  {paragraph}
+                </span>
+              ))}
             </blockquote>
           </motion.div>
 
