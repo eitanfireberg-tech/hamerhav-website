@@ -25,6 +25,7 @@ export const NAV = {
     { label: 'טיפול', href: '#treatment' },
     { label: 'גישות', href: '#approaches' },
     { label: 'קורסים', href: '#courses' },
+    { label: 'המלצות מטופלים', href: '#recommendations' },
     { label: 'צור קשר', href: '#contact' },
   ],
   cta: 'שיחת היכרות',
@@ -310,8 +311,8 @@ export const CONTACT = {
 } as const;
 
 export const RECOMMENDATIONS = {
-  title: 'חוויות ורשמים',
-  subtitle: 'מתוך תחושה של מרחב בטוח',
+  title: 'המלצות מטופלים',
+  subtitle: 'מילים של אנשים שעברו תהליך',
   items: [
     {
       title: 'תהליך של שיפור משמעותי בדינמיקה המשפחתית',
