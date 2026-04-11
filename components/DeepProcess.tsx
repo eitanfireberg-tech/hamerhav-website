@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Search, Heart, Layers, Star, RefreshCw, Check } from "lucide-react";
 import { DEEP_PROCESS } from "@/lib/content";
-import SectionQuotes from "./SectionQuotes";
+import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 const iconMap: Record<string, React.ReactNode> = {
   search: <Search size={20} aria-hidden="true" />,
@@ -27,6 +27,7 @@ export default function DeepProcess() {
       ref={ref}
     >
       <div className="section-container">
+        <QuoteOpen />
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -84,7 +85,7 @@ export default function DeepProcess() {
           ))}
         </div>
 
-        <SectionQuotes />
+        <QuoteClose />
       </div>
     </section>
   );

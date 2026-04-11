@@ -3,7 +3,7 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import { motion, useInView } from "framer-motion";
 import { RECOMMENDATIONS } from "@/lib/content";
-import SectionQuotes from "./SectionQuotes";
+import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 export default function Recommendations() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -74,6 +74,7 @@ export default function Recommendations() {
       ref={sectionRef}
     >
       <div className="section-container">
+        <QuoteOpen />
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -133,14 +134,6 @@ export default function Recommendations() {
               transition={{ duration: 0.5, delay: 0.1 + i * 0.05 }}
               className="snap-center shrink-0 w-[82vw] sm:w-[70vw] md:w-[380px] bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
             >
-              {/* Quote mark */}
-              <span
-                className="text-5xl text-[#7A9E6A]/25 leading-none font-serif select-none mb-2"
-                aria-hidden="true"
-              >
-                &#x201E;
-              </span>
-
               {/* Quote text */}
               <p className="text-[#2C2C2A]/80 text-base leading-relaxed flex-1 mb-5">
                 {item.quote}
@@ -180,7 +173,7 @@ export default function Recommendations() {
       </motion.div>
 
       <div className="section-container">
-        <SectionQuotes />
+        <QuoteClose />
       </div>
     </section>
   );

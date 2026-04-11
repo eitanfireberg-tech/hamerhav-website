@@ -5,7 +5,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Brain, Crosshair, PersonStanding, Palette } from "lucide-react";
 import { APPROACHES } from "@/lib/content";
-import SectionQuotes from "./SectionQuotes";
+import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 const iconMap: Record<string, React.ReactNode> = {
   brain: <Brain size={28} aria-hidden="true" />,
@@ -26,6 +26,7 @@ export default function Approaches() {
       ref={ref}
     >
       <div className="section-container">
+        <QuoteOpen />
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -71,7 +72,7 @@ export default function Approaches() {
           ))}
         </div>
 
-        <SectionQuotes />
+        <QuoteClose />
       </div>
     </section>
   );

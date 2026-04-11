@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { PHILOSOPHY } from "@/lib/content";
-import SectionQuotes from "./SectionQuotes";
+import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 export default function Philosophy() {
   const ref = useRef(null);
@@ -18,6 +18,7 @@ export default function Philosophy() {
       ref={ref}
     >
       <div className="section-container">
+        <QuoteOpen />
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -36,15 +37,9 @@ export default function Philosophy() {
             </p>
 
             <blockquote
-              className="font-serif text-lg md:text-xl text-[#2C2C2A]/80 leading-loose mb-10 relative"
+              className="font-serif text-lg md:text-xl text-[#2C2C2A]/80 leading-loose mb-10"
               cite="#"
             >
-              <span
-                className="absolute top-0 right-0 text-7xl text-[#7A9E6A]/20 leading-none font-serif"
-                aria-hidden="true"
-              >
-                &#x201E;
-              </span>
               {PHILOSOPHY.body.split('\n').map((paragraph, i) => (
                 <span key={i} className={i > 0 ? 'block mt-4' : ''}>
                   {paragraph}
@@ -69,7 +64,7 @@ export default function Philosophy() {
             </a>
           </motion.div>
 
-          <SectionQuotes />
+          <QuoteClose />
         </div>
       </div>
     </section>

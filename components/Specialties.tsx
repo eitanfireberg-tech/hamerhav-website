@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { SPECIALTIES } from "@/lib/content";
-import SectionQuotes from "./SectionQuotes";
+import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 export default function Specialties() {
   const ref = useRef(null);
@@ -18,6 +18,7 @@ export default function Specialties() {
       ref={ref}
     >
       <div className="section-container">
+        <QuoteOpen />
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -58,7 +59,7 @@ export default function Specialties() {
           ))}
         </motion.ul>
 
-        <SectionQuotes />
+        <QuoteClose />
       </div>
     </section>
   );

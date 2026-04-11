@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ABOUT } from "@/lib/content";
-import SectionQuotes from "./SectionQuotes";
+import { QuoteOpen, QuoteClose } from "./SectionQuotes";
 
 export default function About() {
   const ref = useRef(null);
@@ -19,6 +19,7 @@ export default function About() {
       ref={ref}
     >
       <div className="section-container">
+        <QuoteOpen />
         <div className="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-16">
           {/* Text — right (RTL = first in flow) */}
           <motion.div
@@ -78,7 +79,7 @@ export default function About() {
           </motion.div>
         </div>
 
-        <SectionQuotes />
+        <QuoteClose />
       </div>
     </section>
   );
