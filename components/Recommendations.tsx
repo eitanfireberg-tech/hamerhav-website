@@ -147,7 +147,7 @@ export default function Recommendations() {
 
               {/* Closing quote mark */}
               <span
-                className="text-5xl text-[#7A9E6A]/25 leading-none font-serif select-none flex justify-start"
+                className="text-5xl text-[#7A9E6A]/25 leading-none font-serif select-none block text-left"
                 aria-hidden="true"
               >
                 ״
