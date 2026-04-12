@@ -34,7 +34,7 @@ export default function Psychodrama() {
                 fill
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, 45vw"
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </motion.div>

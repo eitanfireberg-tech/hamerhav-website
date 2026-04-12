@@ -41,7 +41,7 @@ export default function OnlineTrack() {
                 fill
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, 40vw"
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </motion.div>
