@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Serif_Hebrew, Noto_Sans_Hebrew, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { SEO, SITE } from "@/lib/content";
+import { buildJsonLd } from "@/lib/seo";
 
 const notoSerifHe = Noto_Serif_Hebrew({
   variable: "--font-noto-serif-he",
@@ -47,19 +48,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Psychologist",
-  name: SITE.therapistName,
-  url: SEO.url,
-  telephone: SITE.phone,
-  description: SEO.description,
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "IL",
-  },
-  sameAs: [],
-};
+const jsonLd = buildJsonLd();
 
 export default function RootLayout({
   children,

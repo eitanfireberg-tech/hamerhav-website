@@ -13,7 +13,7 @@ export const SITE = {
 export const SEO = {
   title: 'קרן בן כליפה פיירברג | מטפלת פסיכודרמטיסטית | המרחב הבטוח לצמיחה',
   description:
-    'פסיכודרמטיסטית בעלת עשרים שנות ניסיון. טיפול נפשי וריגשי. טיפול ביחידים וקבוצות. לפרטים קרן בן כליפה פיירברג 054-6306916.',
+    'פסיכודרמטיסטית M.A. עם עשרים שנות ניסיון. טיפול נפשי ורגשי בכפר סבא וב-Online: מבוגרים, נוער, ילדים והדרכת הורים, שכול ואובדן, חרדה, טראומה, זוגיות וקבוצות. שיחת היכרות ללא עלות: 054-6306916.',
   url: 'https://kerenfireberg.co.il',
   locale: 'he_IL',
 } as const;
@@ -365,6 +365,105 @@ export const RECOMMENDATIONS = {
         'קשה להיפרד מאשת מקצוע כמו קרן. היא משלבת חוכמה, נעימות וגישה כל כך אנושית, שזה מרגיש פשוט זכות גדולה לעבור איתה תהליך.',
     },
   ],
+} as const;
+
+// FAQ — visible on the page AND emitted as FAQPage JSON-LD + llms.txt.
+// Answers must only state facts that appear elsewhere on the site.
+export const FAQ = {
+  title: 'שאלות נפוצות',
+  subtitle: 'תשובות קצרות לשאלות שעולות לפני שמתחילים',
+  items: [
+    {
+      q: 'מהי פסיכודרמה ולמי היא מתאימה?',
+      a: 'פסיכודרמה היא שיטת טיפול שפיתח הפסיכיאטר Dr. Jacob L. Moreno, המשלבת פסיכותרפיה עם פעולה (דרמה). במקום רק "לדבר על" הבעיה, המטופל מעורר חוויות, זיכרונות וקונפליקטים ומעבד אותם באופן חי ומוחשי. השיטה מתאימה במיוחד למי שמרגיש שמילים לבדן אינן מספיקות, למי שרוצה להשתחרר מדפוסים חוזרים, ולמי שמחפש גישה לשכבות עמוקות של הנפש. קרן בן כליפה פיירברג היא פסיכודרמטיסטית בעלת תואר שני בפסיכודרמה.',
+    },
+    {
+      q: 'איפה מתקיים הטיפול?',
+      a: 'הטיפול מתקיים בקליניקה בכפר סבא, או ב-Online דרך Zoom — כך שניתן להגיע מכל מקום בארץ ובעולם. ניתן לבחור טיפול פרטני או קבוצתי.',
+    },
+    {
+      q: 'האם יש טיפול לילדים, לנוער והדרכת הורים?',
+      a: 'כן. המרכז מציע טיפול ממוקד שינוי למבוגרים ולנוער, טיפול בילדים והדרכת הורים. הדרכת ההורים כוללת ליווי הורים לילדים עם מורכבויות רגשיות, ובפרט הורים לילדי ADHD, ASD ו-HSP (רגישות גבוהה). בנוסף מתקיימות קבוצות מנהיגות לילדים ולבני נוער — "מנהיגות מתוך חוסן".',
+    },
+    {
+      q: 'האם את מלווה אנשים בשכול, אובדן ומשברי חיים?',
+      a: 'כן. שכול, אובדן ומשברי חיים הם תחום התמחות קליני מרכזי. במהלך עשרים שנות עבודה, כולל במסגרות ציבוריות כמו משרד הביטחון ומשרד החינוך, קרן ליוותה אנשים ברגעים משמעותיים ובצמתי חיים מורכבים. העבודה משלבת שיח עומק, פסיכודרמה וכלים גופניים כמו SE (Somatic Experiencing) לעיבוד עדין ובקצב המותאם למטופל.',
+    },
+    {
+      q: 'האם יש טיפול בחרדה, התקפי פאניקה וחרדה חברתית?',
+      a: 'כן. הטיפול בחרדה משלב בין היתר CBT (טיפול קוגניטיבי-התנהגותי) — שיטה מבוססת מחקר שנמצאה יעילה במיוחד לחרדה, דיכאון, פוביות ו-OCD — יחד עם כלים לוויסות רגשי וניהול סטרס, וכלים ייעודיים להתמודדות עם חרדה חברתית.',
+    },
+    {
+      q: 'בטראומה — איך עובדים?',
+      a: 'לטיפול בטראומה ובמתח מצטבר נעשה שימוש בין היתר ב-SE — Somatic Experiencing®, שיטה שפיתח Dr. Peter A. Levine. השיטה עובדת עם התגובות הפיזיולוגיות של מערכת העצבים ומאפשרת עיבוד חוויות טראומטיות בעדינות, בקצב של המטופל וללא צורך בהצפה רגשית.',
+    },
+    {
+      q: 'אילו גישות טיפוליות את משלבת?',
+      a: 'הגישה אינטגרטיבית ומותאמת אישית: פסיכודרמה, CBT, Focusing (התמקדות, הגישה של Eugene Gendlin), SE — חוויה סומטית, ויצירה ושיח עומק (כתיבה טיפולית, צבע, קלפים, תנועה ועבודה גופנית). הכלים נבחרים לפי שפת התקשורת הטבעית של כל מטופל.',
+    },
+    {
+      q: 'האם יש טיפול זוגי?',
+      a: 'כן. ליווי בקשר זוגי — שינוי דפוסים בזוגיות והפיכת קונפליקטים לצמיחה. בנוסף קיים "המסלול הזוגי" במסגרת מפגשי ה-Online, ליצירת זוגיות או בהירות בזוגיות קיימת.',
+    },
+    {
+      q: 'מהו מסלול ה-Online?',
+      a: 'מסלול ממוקד של 12 מפגשים ב-Zoom לאורך כשלושה חודשים, סביב מטרה אחת מוגדרת ויעד ריאלי. יש ארבעה מסלולים: מקצועי (קריירה והתפתחות בעבודה), זוגי, אישי (יציאה מתקיעות וקבלת החלטות) ומסלול ויסות (ניהול הצפה רגשית וחוסן יומיומי).',
+    },
+    {
+      q: 'האם יש קבוצות טיפוליות?',
+      a: 'כן. מתקיימות קבוצות נשים — מרחב נשי בטוח לחקר, ריפוי וצמיחה המשלב כלי SE, פסיכודרמה ויצירה — וכן קבוצות מנהיגות לילדים ולבני נוער. קרן היא גם Group Therapist מוסמכת. בנוסף מתקיימות סדנאות והרצאות, כולל לארגונים.',
+    },
+    {
+      q: 'מה הניסיון וההכשרה של קרן?',
+      a: 'קרן בן כליפה פיירברג היא פסיכודרמטיסטית בעלת תואר שני טיפולי בפסיכודרמה ו-Group Therapist, עם עשרים שנות ניסיון קליני במסגרות ציבוריות ופרטיות, ביניהן משרד הביטחון ומשרד החינוך.',
+    },
+    {
+      q: 'איך מתחילים?',
+      a: 'מתחילים בשיחת היכרות טלפונית ללא עלות. ניתן להתקשר או לשלוח וואטסאפ למספר 054-6306916, או להשאיר פרטים בטופס באתר.',
+    },
+  ],
+} as const;
+
+// English profile — used only in machine-readable outputs (llms.txt, JSON-LD).
+// Mirrors the Hebrew content; do not add claims that are not on the site.
+export const AI_PROFILE_EN = {
+  practiceName: 'HaMerhav HaBatuach LaTzmicha (The Safe Space for Growth)',
+  therapistName: 'Keren Ben Kalifa Fireberg',
+  summary:
+    'Keren Ben Kalifa Fireberg is an Israeli psychodramatist (M.A. in Psychodrama) and certified group therapist with 20 years of clinical experience, including work in public frameworks such as the Israeli Ministry of Defense and Ministry of Education. Her practice, "The Safe Space for Growth", is a center for emotional and mental-health therapy, in-person in Kfar Saba (Sharon region, Israel) and online via Zoom. Sessions are in Hebrew.',
+  location: 'Kfar Saba, Israel (in-person clinic) + online via Zoom (anywhere in Israel or abroad)',
+  audiences: ['Adults', 'Teenagers', 'Children', 'Parents (parent guidance)', 'Couples', 'Women (women\'s groups)', 'Organizations (lectures and workshops)'],
+  services: [
+    'Individual psychotherapy (in-person in Kfar Saba or online)',
+    'Psychodrama therapy',
+    'Group therapy and women\'s groups',
+    'Child and adolescent therapy',
+    'Parent guidance, including parents of children with ADHD, ASD and HSP (highly sensitive)',
+    'Couples therapy and relationship patterns',
+    'Focused 12-session online program via Zoom (professional, couples, personal and emotional-regulation tracks)',
+    'Leadership-through-resilience groups for children and teens',
+    'Workshops and lectures (burnout, resilience, communication and dialogue culture for organizations)',
+  ],
+  approaches: [
+    'Psychodrama (J.L. Moreno)',
+    'CBT — Cognitive Behavioral Therapy',
+    'Focusing (Eugene Gendlin)',
+    'SE — Somatic Experiencing® (Peter A. Levine) for trauma',
+    'Expressive arts-based therapy and deep dialogue',
+  ],
+  specialties: [
+    'Grief, bereavement and loss',
+    'Life transitions and crisis',
+    'Anxiety and panic attacks',
+    'Social anxiety',
+    'Stress management and emotional regulation',
+    'Resilience building',
+    'Trauma recovery (Somatic Experiencing)',
+    'Parenting guidance',
+    'Couples therapy and relationship patterns',
+    'Neurodiversity and high sensitivity',
+  ],
+  firstStep: 'A free introductory phone call. Phone / WhatsApp: +972-54-630-6916.',
 } as const;
 
 export const FOOTER = {

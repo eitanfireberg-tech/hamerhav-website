@@ -12,6 +12,7 @@ import Courses from "@/components/Courses";
 import WomensGroups from "@/components/WomensGroups";
 import Philosophy from "@/components/Philosophy";
 import Recommendations from "@/components/Recommendations";
+import FAQSection from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFAB from "@/components/WhatsAppFAB";
@@ -34,6 +35,7 @@ export default function Home() {
         <WomensGroups />
         <Philosophy />
         <Recommendations />
+        <FAQSection />
         <Contact />
       </main>
       <Footer />
