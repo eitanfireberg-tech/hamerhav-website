@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { SPECIALTIES } from "@/lib/content";
+import { SPECIALTIES, LANDING_PAGES } from "@/lib/content";
 
 export default function Specialties() {
   const ref = useRef(null);
@@ -57,6 +57,19 @@ export default function Specialties() {
           ))}
         </motion.ul>
 
+        {/* Plain links (not animated) so they are always present for crawlers */}
+        <ul className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto mt-10 list-none p-0" role="list">
+          {LANDING_PAGES.map((p) => (
+            <li key={p.slug}>
+              <a
+                href={`/${p.slug}/`}
+                className="inline-block bg-[#7A9E6A] hover:bg-[#5f8250] text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors"
+              >
+                {p.linkLabel}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

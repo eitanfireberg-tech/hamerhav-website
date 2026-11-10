@@ -32,7 +32,7 @@ export default function Nav() {
           >
             {/* Logo */}
             <a
-              href="#hero"
+              href="/"
               className="font-serif text-base md:text-lg font-semibold text-[#2C2C2A] hover:text-[#7A9E6A] transition-colors leading-tight"
               aria-label={`${NAV.logo} — חזרה לדף הבית`}
             >
